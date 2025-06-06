@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { cn, generateMetadata } from "@/functions";
 import { inter, satoshi } from "@/constants";
 import { Toaster } from "@/components/ui/sonner";
-import { Providers } from "@/components";
 
 export const metadata = generateMetadata();
 
@@ -17,7 +16,7 @@ export default function RootLayout({
                 className={cn(
                     "min-h-screen bg-background text-foreground antialiased font-default overflow-x-hidden !scrollbar-hide",
                     inter.variable,
-                    satoshi.variable,
+                    satoshi.variable
                 )}
             >
                 <Toaster
@@ -25,10 +24,8 @@ export default function RootLayout({
                     theme="dark"
                     position="top-right"
                 />
-                <Providers>
-                    {children}
-                </Providers>
+                {children}
             </body>
         </html>
     );
-};
+}
