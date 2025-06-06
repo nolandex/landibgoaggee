@@ -4,8 +4,8 @@ import React from "react";
 import { ArrowDownIcon, ArrowUpIcon, BarChart3Icon, MessageSquareIcon, Share2Icon, UsersIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"; // Impor dari recharts
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"; // Hanya komponen kustom
+import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
+import { ChartContainer, ChartTooltip, ChartTooltipContent, ChartConfig } from "@/components/ui/chart"; // Impor ChartConfig
 import { Container } from "@/components";
 import { ANALYTICS_DATA, RECENT_SALES } from "@/constants/dashboard";
 
